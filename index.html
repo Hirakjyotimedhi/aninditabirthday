@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anindita Birthday</title>
+
+<style>
+body{
+    margin:0;
+    background:#FAAFBA;
+    color:white;
+}
+
+  <header class="header-image">
+  <img src="image.jpeg" alt="Anindita">
+</header>
+
+  .header-image{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding-top:30px;
+}
+
+.header-image img{
+  width:180px;
+  height:180px;
+  object-fit:cover;
+  border-radius:50%;
+  border:5px solid #FFDB58;
+  box-shadow:0 0 20px rgba(255,219,88,0.7);
+}
+
+
+.hero{
+    height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-family: 'Arial Black', sans-serif;
+    font-size:50px;
+}
+
+.section-container{
+  height:200px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
+
+#capsuleBtn{
+  font-family: 'Arial Black', sans-serif;
+  background:#FFDB58;
+  color:white;
+  border:none;
+  padding:14px 40px;
+  font-size:18px;
+  border-radius:50px;
+  cursor:pointer;
+  transition:all 0.4s ease;
+}
+
+.small-text{
+  font-size:12px;
+}
+
+#capsuleBtn.hide{
+  font-family: 'Arial Black', sans-serif;
+  opacity:0;
+  transform:scale(0.7);
+}
+
+#message{
+  font-family: 'Arial', sans-serif;
+  opacity:0;
+  transform:translateY(20px);
+  font-size:20px;
+  font-weight:600;
+  transition:all 0.6s ease;
+  margin-top:15px;
+}
+
+#message.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+footer{
+    font-family: 'Arial', sans-serif;
+    background:#FFDB58;
+    padding:20px;
+    text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+<div>
+
+<h1>HAPPY BIRTHDAY DEHA</h1>
+
+<p>
+জিলমিল তোৰ হাঁহি<br>
+জোনাকত আহি<br>
+হৈ ফুলৰ পাহি<br>
+ইমান আমনি<br>
+যেন বালিমাহী<br>
+মন সৰগত উৰি উৰি উৰি...
+</p>
+
+<p>
+জন্মদিনৰ বহুত বহুত শুভেচ্ছা জনালোঁ দেহা।<br>
+তোমাৰ সকলো আশা পূৰণ হওঁক। ভাল হওঁক। চেনেহ আৰু মৰম।
+</p>
+
+<p>- তোমাৰ সোণ, তোমাৰ তিলৰ লাড়ু<br>
+  হীৰক❤️</p>
+
+</div>
+</div>
+  
+<section class="section-container">
+
+<button id="capsuleBtn" onclick="showMessage()">I LOVE YOU XUN<br>  
+  <span class="small-text">(click here for reply)</span></button>
+
+<div id="message">
+I LOVE YOU TOO DEHA, I love you more than anything...........
+</div>
+
+</section>
+
+<script>
+function showMessage(){
+  const btn = document.getElementById("capsuleBtn");
+  const msg = document.getElementById("message");
+
+  btn.classList.add("hide");
+
+  setTimeout(() => {
+    btn.style.display = "none";
+    msg.classList.add("show");
+  }, 400);
+}
+</script>
+
+<footer>
+  &copy 15 March 2026 Hirak Jyoti Medhi
+  <p>"Crafted with love and care for Anindita by Hirak on her special day, her birthday"</p>
+</footer>
+
+</body>
+</html>
+
+
